@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>A Jornada do Herói</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Escolha: Você acorda em uma floresta desconhecida. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="1">(A) Explorar a floresta</button>
+            <button class="btn-proximo" data-proximo="2">(B) Procurar um caminho de saída</button>
+        </div>
+        <div class="passo" id="passo-1">
+            <p>Escolha: Você encontra uma árvore antiga com inscrições misteriosas. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="3">(A) Investigar as inscrições</button>
+            <button class="btn-proximo" data-proximo="4">(B) Ignorar e seguir adiante
+            </button>
+        </div>
+        <div class="passo" id="passo-2">
+            <p>Resultado: Você descobre que a árvore guarda um segredo sobre um tesouro escondido. Você ganha uma pista valiosa.
+                Ignorar e seguir adiante. Você continua a andar, mas sente que perdeu algo importante.
+                Procurar um caminho de saída.
+                
+                Você encontra uma bifurcação no caminho. Qual direção você segue?</p>
+            <button class="btn-proximo" data-proximo="5">(A) Esquerda, onde há um som de água corrente</button>
+            <button class="btn-proximo" data-proximo="6">(B) Direita, onde há pegadas recentes</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>(Esquerda)
+
+                Resultado: Você chega a um rio que bloqueia seu caminho. Você tenta atravessar nadando ou procura uma ponte?</p>
+            <button class="btn-proximo" data-proximo="7">(A) Nadar</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <img src="img/cenario-passo4-voltar-casa.png" alt="">
+            <p>Dependendo das escolhas feitas, o herói pode encontrar aliados, enfrentar inimigos, descobrir segredos ou encontrar armadilhas.</p>
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>(Direita)
+
+                Resultado: As pegadas levam a uma caverna misteriosa. Você entra na caverna ou procura outro caminho?</p>
+            <button class="btn-proximo" data-proximo="7">(A) Entrar</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Você descobriu um segredo sobre um tesouro escondido. Com a pista em mãos, você precisa decidir o próximo passo.O que você faz com a pista do tesouro?</p>
+            <button class="btn-proximo" data-proximo="8">(A) Segue a direção indicada pela pista.</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Resultado: A pista leva você a um antigo mapa escondido em uma rocha coberta de musgo.Você segue o mapa imediatamente ou descansa?</p>
+            <button class="btn-proximo" data-proximo="9">(A) Segue o mapa.</button>
+            <button class="btn-proximo" data-proximo="10">(B) Procura um lugar seguro para descansar antes de continuar.</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Resultado: Você encontra um vale profundo cercado por montanhas, que parece ser o destino final.Como você atravessa o vale?</p>
+            <button class="btn-proximo" data-proximo="7">(A) Desce pelas escarpas rochosas.</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Resultado: Enquanto descansa, um misterioso viajante aparece e oferece ajuda. Você aceita a ajuda ou recusa?</p>
+            <button class="btn-proximo" data-proximo="11">(A) Aceita a ajuda.</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Resultado: Você caminha por horas e encontra um acampamento abandonado. O que você faz?</p>
+            <button class="btn-proximo" data-proximo="12">(A) Investiga o acampamento.</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Resultado: No acampamento, você encontra provisões e um diário misterioso. Você lê o diário ou pega apenas as provisões?</p>
+                <button class="btn-proximo" data-proximo="12">(B) Pega as provisões e segue em frente.</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <img src="img/cenario-passo11-cidade-perdida.png" alt="">
+            <p>Você lê e segue em frente.</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
